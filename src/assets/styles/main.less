@@ -1,0 +1,39 @@
+@import './components/AsideNav.less';
+@import './components/MainContainer.less';
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: 0;
+  list-style: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  
+  #root {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    > aside {
+      position: relative;
+      height: 100%;
+      width: 300px;
+      flex-shrink: 0;
+      background: #303030ff;
+    };
+  
+    > main {
+      position: relative;
+      height: 100%;
+      flex: 1;
+      background: #f0f0f0ff;
+    };
+  }
+}
+

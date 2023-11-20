@@ -1,0 +1,41 @@
+aside {
+  padding: 30px;
+}
+main {
+  padding: 30px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: 0;
+  list-style: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+html #root,
+body #root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+html #root > aside,
+body #root > aside {
+  position: relative;
+  height: 100%;
+  width: 300px;
+  flex-shrink: 0;
+  background: #303030ff;
+}
+html #root > main,
+body #root > main {
+  position: relative;
+  height: 100%;
+  flex: 1;
+  background: #f0f0f0ff;
+}

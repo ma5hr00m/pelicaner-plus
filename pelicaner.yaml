@@ -1,0 +1,19 @@
+favicon: https://q1.qlogo.cn/g?b=qq&nk=3411281455@&s=640
+title: Pelicaner Plus
+
+language: zh-CN
+
+urls:
+  Blogs:
+    - title: 阿菇の博客
+      url: https://ma5hr00m.top/
+      favicon: https://q1.qlogo.cn/g?b=qq&nk=3411281455@&s=640
+      description: 出来技术博客，还有些有趣的东西哦～
+    - title: ec3o's Blog
+      url: https://ec3o.github.io/
+      favicon: https://ek1ng.com/favicon.ico
+      description: 双边学弟，Golang后端开发
+    - title: ek1ng's Blog
+      url: https://ek1ng.com/
+      favicon: https://ek1ng.com/favicon.ico
+      description: Vidar强大学长
