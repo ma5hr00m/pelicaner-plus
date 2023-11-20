@@ -1,2 +1,2 @@
 # pelicaner-plus
-A static website navigation page based on React.
+一个基于 React 的静态网址导航网站。
