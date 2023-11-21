@@ -6,8 +6,10 @@ export default function MainContainer() {
   return (
     <div id="main-container">
       <MainHeader></MainHeader>
-      <MainArea></MainArea>
-      <MainFooter></MainFooter>
+      <div>
+        <MainArea></MainArea>
+        <MainFooter></MainFooter>
+      </div>
     </div>
   );
 }

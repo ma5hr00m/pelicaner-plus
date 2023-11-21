@@ -1,14 +1,21 @@
+@import './_fonts.less';
+
 @import './components/AsideNav.less';
 @import './components/MainHeader.less';
 @import './components/MainArea.less';
 @import './components/MainFooter.less';
 
+
 * {
   padding: 0;
   margin: 0;
-  text-decoration: 0;
-  list-style: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
 }
 
 html, body {
@@ -36,6 +43,7 @@ html, body {
       flex: 1;
       display: flex;
       flex-direction: column;
+      background: #f0f0f0ff;
 
       > header {
         position: relative;
@@ -44,17 +52,26 @@ html, body {
         flex-shrink: 0;
       };
 
-      > main {
+      > div {
         position: relative;
         width: 100%;
         flex: 1;
-      }
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
 
-      > footer {
-        position: relative;
-        width: 100%;
-        height: fit-content;
-        flex-shrink: 0;
+        > main {
+          position: relative;
+          width: 100%;
+          flex: 1;
+        }
+  
+        > footer {
+          position: relative;
+          width: 100%;
+          height: fit-content;
+          flex-shrink: 0;
+        }
       }
     };
   }

@@ -1,8 +1,121 @@
+@font-face {
+  font-family: noto-sans-sc;
+  src: url(../fonts/NotoSansSC-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: noto-serif-sc;
+  src: url(../fonts/NotoSerifSC-Regular.otf);
+}
 aside {
-  padding: 30px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+}
+aside > div {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+aside > div > img {
+  height: 32px;
+}
+aside > div > h1 {
+  color: #ffffffff;
+  font-size: 28px;
+}
+aside > hr {
+  height: 2px;
+  border: 0;
+  background: #606060ff;
+}
+aside > ul {
+  padding: 30px 10px 0;
+  flex: 1;
+}
+aside > ul > li {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  margin: 0 0 20px;
+}
+aside > ul > li > a {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  font: 600 18px noto-sans-sc;
+  color: #a0a0a0ff;
 }
 main {
   padding: 30px 30px 0;
+}
+main > section {
+  margin: 20px 0 0;
+}
+main > section:first-child {
+  margin: 0;
+}
+main > section > h3 {
+  font-family: noto-sans-sc;
+}
+main > section > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+main > section > ul > li {
+  position: relative;
+  width: 285px;
+  height: 80px;
+  padding: 0 20px;
+  margin: 10px;
+  font-family: noto-sans-sc;
+  background: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+main > section > ul > li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 10px #a0a0a0aa;
+}
+main > section > ul > li > a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: #000000ff;
+}
+main > section > ul > li > a > div {
+  position: relative;
+  margin-right: 10px;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > section > ul > li > a > div > img {
+  position: relative;
+  width: inherit;
+  height: 40px;
+}
+main > section > ul > li > a > hgroup {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main > section > ul > li > a > hgroup > span {
+  width: 100%;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 footer {
   padding: 30px;
@@ -12,9 +125,13 @@ footer {
 * {
   padding: 0;
   margin: 0;
-  text-decoration: 0;
-  list-style: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
+  /* Chrome Safari */
 }
 html,
 body {
@@ -44,6 +161,7 @@ body #root > #main-container {
   flex: 1;
   display: flex;
   flex-direction: column;
+  background: #f0f0f0ff;
 }
 html #root > #main-container > header,
 body #root > #main-container > header {
@@ -52,14 +170,23 @@ body #root > #main-container > header {
   height: 60px;
   flex-shrink: 0;
 }
-html #root > #main-container > main,
-body #root > #main-container > main {
+html #root > #main-container > div,
+body #root > #main-container > div {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+html #root > #main-container > div > main,
+body #root > #main-container > div > main {
   position: relative;
   width: 100%;
   flex: 1;
 }
-html #root > #main-container > footer,
-body #root > #main-container > footer {
+html #root > #main-container > div > footer,
+body #root > #main-container > div > footer {
   position: relative;
   width: 100%;
   height: fit-content;
