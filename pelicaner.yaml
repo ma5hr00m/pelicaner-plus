@@ -26,20 +26,36 @@ urls:
     - title: NIPPON COLORS
       url: https://nipponcolors.com/
       favicon: https://nipponcolors.com/favicon.ico
-      description: 日本传统色
+      description: 日本传统色色板
     - title: zhongguose
       url: http://zhongguose.com/
       favicon: http://zhongguose.com/favicon.ico
-      description: 中国色
-    - title: Emoji大全
-      url: https://www.emojiall.com/zh-hans
-      favicon: https://www.emojiall.com/favicon.ico
-      description: 提供各种 emoji 表情符号
-    - title: NIPPON COLORS
-      url: https://nipponcolors.com/
-      favicon: https://nipponcolors.com/favicon.ico
-      description: 日本传统色
-    - title: zhongguose
-      url: http://zhongguose.com/
-      favicon: http://zhongguose.com/favicon.ico
-      description: 中国色
+      description: 中国色色板
+    - title: SVG Repo
+      url: https://www.svgrepo.com/
+      favicon: https://www.svgrepo.com/favicon.ico
+      description: 50w+的免费SVG资源
+    - title: Pinterest
+      url: https://www.pinterest.com/favicon.ico
+      favicon: https://s.pinimg.com/webapp/favicon-22eb868c.png
+      description: 艺术资源站，品类齐全，瀑布流布局老祖宗
+    - title: Webframe
+      url: https://webframe.xyz/
+      favicon: https://webframe.xyz/favicon.ico
+      description: Web页面设计参考，分类明确，也有对应组件的设计样式
+    - title: Adobe Color
+      url: https://color.adobe.com/zh/
+      favicon: https://color.adobe.com/favicon.ico
+      description: Adobe官方色彩工具站，提供色轮取色、获取主题、获取色彩以及其他协助工具
+    - title: 
+      url: 
+      favicon: 
+      description: 
+    - title: 
+      url: 
+      favicon: 
+      description: 
+    - title: 
+      url: 
+      favicon: 
+      description: 

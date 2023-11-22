@@ -29,6 +29,11 @@ export default function AsideNav() {
           </a>
         </li>
       ))}
+        <li>
+          <a href="/about">
+            关于本站
+          </a>
+        </li>
       </ul>
     </aside>
   );
